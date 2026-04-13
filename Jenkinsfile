@@ -6,7 +6,7 @@ maven 'Maven' // Ensure this matches the name configured in Jenkins
 stages {
 stage('Checkout') {
 steps {
-git branch: 'master', url: 'https://github.com/<your-user-name>/<your-repo-name>.git'
+git branch: 'main', url: 'https://github.com/shraddha1231/MyMavenGuavaApp.git'
 }
 }
 stage('Build') {
