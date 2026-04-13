@@ -22,7 +22,7 @@ sh 'mvn test' // Run unit tests
 stage('Run Application') {
 steps {
 // Start the JAR application
-sh 'java -jar target/MyMavenGuavaApp-1.0-SNAPSHOT.jar'
+sh 'mvn exec:java -Dexec.mainClass="com.example.App"'
 }
 }
 }
